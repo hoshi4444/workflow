@@ -1,0 +1,7 @@
+name: Pull Action Test
+on: push
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: hoshi4444/create-pr-action
