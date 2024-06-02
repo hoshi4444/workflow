@@ -1,5 +1,5 @@
 name: Pull Action Test
-on: pull_requests
+on: pull_request
 
 jobs:
   test:
