@@ -9,6 +9,7 @@ jobs:
       pull-requests: write
     steps:
       - uses: actions/checkout@v4     # ローカルアクション呼び出し前にチェックアウト
+      - run: echo 'hoge' > hoge.md
       - uses: hoshi4444/create-pr-action@v0
         with:
           message: test
