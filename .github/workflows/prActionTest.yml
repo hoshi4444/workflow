@@ -5,6 +5,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4     # ローカルアクション呼び出し前にチェックアウト
       - uses: hoshi4444/create-pr-action@v0
         with:
           message: test
