@@ -1,7 +1,10 @@
 name: Pull Action Test
-on: push
+on: pull_requests
+
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: hoshi4444/create-pr-action@v0
+        with:
+          message: test
